@@ -61,6 +61,16 @@ Puede usar la CLI de Docker para ver los cambios y ver el contenedor recién lan
 sudo docker ps -a
 ```
 
+![](source/docker.png?raw=true "Funcionamieto de Docker ")
+
+Podemos revisar las configuraciones y cambios futuros:
+```
+sudo terraform show
+```
+![](source/show.png?raw=true "Show docker config")
+
 + Pagina de Simulacion:
 
 https://www.katacoda.com/courses/terraform/deploy-nginx
+
+
