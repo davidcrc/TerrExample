@@ -44,19 +44,19 @@ resource "docker_container" "nginx-server" {
 }
 ```
 
-Guarde el archivo, luego aplicar:
+Una vez que se ha definido la configuración, necesitamos crear un plan de ejecución. Terraform describe las acciones requeridas para lograr el estado deseado. El plan se puede guardar usando -out. Aplicaremos el plan de ejecución en el siguiente paso.
 
 ```
 sudo terraform plan -out config.tfplan
 ```
 
-Si el plan esta bien y sin error, aplícar:
+Una vez que se haya creado el plan, debemos aplicarlo para alcanzar el estado deseado. Usando el CLI, terraform extraerá cualquier imagen requerida y lanzará nuevos contenedores. La salida indicará los cambios y la configuración resultante.
 
 ```
 sudo terraform apply
 ```
 
-Comprobar que el contenedor se está ejecutando:
+Puede usar la CLI de Docker para ver los cambios y ver el contenedor recién lanzado. Comprobar que el contenedor se está ejecutando:
 ```
 sudo docker ps -a
 ```
