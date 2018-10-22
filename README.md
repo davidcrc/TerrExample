@@ -74,3 +74,33 @@ sudo terraform show
 https://www.katacoda.com/courses/terraform/deploy-nginx
 
 
+## 4. Otras herramientas similares
+
+- Las herramientas de orquestación de configuración, que incluyen Terraform y AWS CloudFormation, están diseñadas para automatizar la implementación de servidores y otra infraestructura.
+
+- Las herramientas de administración de la configuración como Chef, Puppet y las demás en esta lista ayudan a configurar el software y los sistemas en esta infraestructura que ya se ha aprovisionado.
+
+### 4.1 AWS CloudFormation
+
+<img src="https://dnp94fjvlna2x.cloudfront.net/wp-content/uploads/2018/04/CF-logo.png" width="128">
+
+Al igual que Terraform, AWS CloudFormation es una herramienta de orquestación de configuración que le permite codificar su infraestructura para automatizar sus implementaciones.
+
+Las principales diferencias radican en que CloudFormation está profundamente integrado y solo se puede utilizar con AWS, y las plantillas de CloudFormation se pueden crear con YAML además de JSON.
+
+CloudFormation le permite obtener una vista previa de los cambios propuestos en su pila de infraestructura de AWS y ver cómo podrían afectar sus recursos, y administra las dependencias entre estos recursos.
+
+Para garantizar que la implementación y actualización de la infraestructura se realice de manera controlada, CloudFormation usa Desencadenadores de reversión para revertir las pilas de infraestructura a un estado implementado anterior si se detectan errores.
+
+### 4.2 Azure Resource Manager y Google Cloud Deployment Manager
+
+**Azure Resource Manager** le permite definir la infraestructura y las dependencias para su aplicación en plantillas, organizar recursos dependientes en grupos que se pueden implementar o eliminar en una sola acción, controlar el acceso a los recursos a través de los permisos de los usuarios y más.
+<center>
+<img src="https://dnp94fjvlna2x.cloudfront.net/wp-content/uploads/2018/04/azure-resource-manager.jpg" width="128">
+</center>
+
+**Google Cloud Deployment Manager**  ofrece muchas características similares para automatizar su pila de infraestructura GCP. Puede crear plantillas utilizando YAML o Python, obtener una vista previa de los cambios que se realizarán antes de la implementación, ver sus implementaciones en la interfaz de usuario de la consola y mucho más.
+
+<center>
+<img src="https://dnp94fjvlna2x.cloudfront.net/wp-content/uploads/2018/04/Deployment_Manager.png" width="128">
+</center>
