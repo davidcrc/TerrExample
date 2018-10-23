@@ -1,6 +1,6 @@
 # TerrExample
 
-## 1. Instalar docker
+## 1. Instalar Terraform
 
 wget https://releases.hashicorp.com/terraform/0.11.9/terraform_0.11.9_linux_amd64.zip
 
